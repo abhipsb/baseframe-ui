@@ -1,0 +1,10 @@
+{
+  "Plugin1": {
+    "location": "assets/plugins/plugin1/plugin1.bundle.js",
+    "moduleName": "Plugin1Module"
+  },
+  "Plugin2": {
+    "location": "assets/plugins/plugin2/plugin2.bundle.js",
+    "moduleName": "AppModule"
+  }
+}

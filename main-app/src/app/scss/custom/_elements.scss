@@ -1,0 +1,24 @@
+@import "../variables/elements";
+@import "../variables/font";
+@import "../variables/colors";
+
+textarea.text-box {
+  @extend .input-element;
+  height: auto;
+}
+
+.password-element {
+  i.fa {
+    top: -4px;
+  }
+}
+
+.container {
+  &.checkbox {
+    input {
+      &:disabled ~ .checkmark {
+        background-color: $siemens-color-11;
+      }
+    }
+  }
+}

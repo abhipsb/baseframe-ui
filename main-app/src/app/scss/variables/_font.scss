@@ -1,0 +1,111 @@
+// =============================================================================
+// FONT DEFINITIONS
+// =============================================================================
+
+@import "fontface";
+@import "colors";
+
+$font-family-sans: "Siemens Sans";
+$siemens-sans-global: "Siemens-Sans-Global";
+
+$global-header-font-family: "Siemens-Sans-Global";
+
+.siemens-sans-global-font {
+  font-family: $siemens-sans-global;
+}
+
+.siemens-sans-font {
+  font-family: $siemens-sans-global;
+  line-height: 20px;
+}
+
+.siemens-sans-font-1 {
+  @extend .siemens-sans-font;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.siemens-sans-font-2 {
+  @extend .siemens-sans-font;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.siemens-sans-global-font-1 {
+  @extend .siemens-sans-global-font;
+  font-size: 34px;
+  color: #879baa;
+  font-weight: normal;
+}
+
+.siemens-sans-global-font-2 {
+  @extend .siemens-sans-global-font;
+  font-size: 32px;
+  color: $siemens-color-18;
+  font-weight: normal;
+}
+
+.siemens-sans-global-font-3 {
+  @extend .siemens-sans-global-font;
+  font-size: 28px;
+  color: #738796;
+  font-weight: bold;
+}
+
+
+.siemens-sans-global-font-4 {
+  @extend .siemens-sans-global-font;
+  font-size: 26px;
+  font-weight: normal;
+}
+
+.siemens-sans-global-font-4-balck {
+  @extend .siemens-sans-global-font-4;
+  color: #000000;
+}
+
+.siemens-sans-global-font-4-blue {
+  @extend .siemens-sans-global-font-4;
+  color: #2387aa;
+}
+
+.siemens-sans-global-font-5 {
+  @extend .siemens-sans-global-font;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.siemens-sans-global-font-5-balck {
+  @extend .siemens-sans-global-font-5;
+  color: #000000;
+}
+
+.siemens-sans-global-font-5-white {
+  @extend .siemens-sans-global-font-5;
+  color: #ffffff;
+}
+
+.siemens-sans-global-font-5-blue {
+  @extend .siemens-sans-global-font-5;
+  color: $siemens-color-33;
+}
+
+.siemens-sans-global-font-6 {
+  @extend .siemens-sans-global-font;
+  font-size: 22px;
+  color: #2387aa;
+  font-weight: bold;
+}
+
+.siemens-sans-global-font-7 {
+  @extend .siemens-sans-global-font;
+  font-size: 18px;
+  color: #738796;
+  font-weight: normal;
+}
+
+.siemens-sans-global-font-8 {
+  @extend .siemens-sans-global-font;
+  font-size: 28px;
+  font-weight: normal;
+}

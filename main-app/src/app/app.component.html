@@ -1,0 +1,30 @@
+<div class="app-header">
+  <div class="global-header">
+    <div>
+      <img class="siemens-logo" src="/assets/img/siemens.png" alt="Siemens" />
+    </div>
+    <div class="application-name"></div>
+  </div>
+
+  <div class="nav-bar">
+
+    <ul class="tabs">
+      <li class="tab">
+        <a routerLinkActive="active" routerLink="Home">
+          Home
+        </a>
+      </li>
+
+      <li class="tab" *ngFor="let menuItem of menuItems">
+        <a routerLinkActive="active" [routerLink]="['Plugin', menuItem]">
+          {{menuItem}}
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="app-body">
+  <router-outlet></router-outlet>
+</div>

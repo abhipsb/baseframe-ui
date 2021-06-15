@@ -1,0 +1,73 @@
+@import "../variables/font";
+@import "../variables/colors";
+@import "./validation-popup";
+
+modal {
+    display: none;
+
+    .modal {
+        float: left;
+        width: 650px;
+        top: 20%;
+        left: calc(50% - 325px);
+        position: absolute;
+        z-index: 2;
+        border: 1px solid $siemens-color-26;
+
+        .modal-header {
+            @extend .siemens-sans-global-font-4-balck;
+            float: left;
+            width: 100%;
+            height: 48px;
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            background-color: $siemens-color-13;
+
+            .header-text {
+                width: auto;
+                float: left;
+                color: $siemens-color-31;
+            }
+
+            .fas {
+                color: $siemens-color-31;
+            }
+
+            .close-header {
+                float: right;
+
+                .close {
+                    width: 32px;
+                    height: 32px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .modal-body {
+            float: left;
+            width: 100%;
+            padding-top: 30px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            background: $siemens-color-4;
+        }
+    }
+
+    .modal-background {
+        /* modal background fixed across whole screen */
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        /* semi-transparent black  */
+        background-color: $siemens-color-47;
+        opacity: 0.70;
+        /* z-index must be below .modal and above everything else  */
+        z-index: 1;
+    }
+}

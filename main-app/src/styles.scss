@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../src/app/scss/main.scss";
+@import "../src/app/scss/custom/main.scss";
+
+@import "../src/app/scss/layout/header";
+@import "../src/app/scss/variables/colors";
+
+.app-header {
+  @extend .application-header;
+  height: auto;
+
+  .global-header {
+    border-bottom: none;
+  }
+}
+
+.app-body {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+}

@@ -1,0 +1,117 @@
+@import './colors';
+@import "vars";
+
+.input-element {
+  @extend .siemens-sans-global-font-5-balck;
+  height: 40px;
+  border: 2px solid $siemens-color-36;
+  padding: 0 8px;
+  line-height: 25px;
+  outline: none;
+}
+
+select {
+  @extend .input-element;
+  min-width: 243px;
+}
+
+input.text-box {
+  @extend .input-element;
+}
+
+.password-element {  
+  position: relative;
+
+  i.fa {
+    position: absolute;
+    font-size: 22px;
+    right: 8px;
+    top: 1px;
+    color: $siemens-color-29;
+    cursor: pointer;
+  }
+}
+
+.select-element {
+  float: left;
+  position: relative;
+  width: 280px;
+  margin-top: 20px;
+
+  &:after {
+    position: absolute;
+    font-family: 'Font Awesome 5 Free';
+    content: '\f078';
+    font-weight: 900;
+    font-size: 22px;
+    right: 8px;
+    top: 9px;
+    color: $siemens-color-29;
+    pointer-events: none;
+  }
+
+  select {
+    width: 100%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
+.container {
+  &.checkbox {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    /* Hide the browser's default checkbox */
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+
+      &:checked ~ .checkmark {
+        border: 2px solid #41aac8;
+
+        &:after {
+          display: block;
+        }
+      }
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+      position: absolute;
+      top: -11px;
+      left: 19px;
+      height: 20px;
+      width: 20px;
+      background-color: #fff;
+      border: 2px solid #879baa;
+
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 6px;
+        top: 2px;
+        width: 5px;
+        height: 10px;
+        border: 1px solid #879baa;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+
+    &:hover input ~ .checkmark {
+      background-color: #ddd;
+    }
+  }
+}

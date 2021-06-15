@@ -1,0 +1,17 @@
+version: "3.5"
+
+services:
+  # UI
+  baseframe-ui:
+    image: baseframe-ui
+    build: ./
+    hostname: ui-baseframe
+    container_name: ui-baseframe
+    ports:
+      - "51020:80"
+    volumes:
+      - ./dist/main-app:/usr/share/nginx/html
+    networks:
+      - default
+networks:
+  default:

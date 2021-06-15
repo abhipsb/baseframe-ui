@@ -1,0 +1,9 @@
+@import './mixins';
+@import './layout/layout';
+@import './variables/variables';
+
+body {
+    font-family : $siemens-sans-global;
+    line-height: 1;
+    background-color: $siemens-color-4;
+}

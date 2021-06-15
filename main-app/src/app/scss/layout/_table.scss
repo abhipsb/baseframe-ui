@@ -1,0 +1,55 @@
+.table {
+  @extend .siemens-sans-global-font-5;
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+
+  .table-row {
+    display: table-row;
+    height: 62px;
+    border: 2px solid $siemens-color-32;
+
+    &:first-of-type {
+      background-color: $siemens-color-32;
+      border-top: none;
+    }
+
+    .table-cell {
+      background-color: $siemens-color-4;
+      border-right: 2px solid $siemens-color-32;
+      height: 62px;
+      padding-left: 12px;
+      word-break: break-word;
+    }
+
+    .table-head {
+      border-right: 2px solid $siemens-color-4;
+    }
+
+    .table-cell,
+    .table-head {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 12px;
+      word-break: break-word;
+
+      &:first-of-type {
+        height: 48px;
+      }
+
+      &:last-of-type {
+        border-right: none;
+      }
+
+      .icon-container {
+        color: $siemens-color-36;
+        font-size: 20px;
+        float: right;
+        margin-right: 8px;
+        .fas {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

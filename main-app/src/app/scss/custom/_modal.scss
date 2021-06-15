@@ -1,0 +1,51 @@
+@import "../layout/modal";
+
+mat-dialog-container.mat-dialog-container {
+  @extend .siemens-sans-global-font-5-balck;
+  padding: 0px;
+
+  .modal-header {
+    @extend .siemens-sans-global-font-4-balck;
+    float: left;
+    width: calc(100% - 40px);
+    padding: 20px;
+    background-color: $siemens-color-13;
+
+    .header-text {
+      width: auto;
+      float: left;
+      color: $siemens-color-31;
+    }
+
+    .fas {
+      color: $siemens-color-31;
+    }
+
+    .close-header {
+      float: right;
+
+      .close {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .modal-body {
+    float: left;
+    width: calc(100% - 40px);
+    padding: 20px;
+    max-height: 450px;
+    overflow-y: auto;
+    background: $siemens-color-4;
+  }
+
+  .modal-footer {
+    float: left;
+    width: calc(100% - 40px);
+    padding: 0px 20px 20px 20px;
+    margin-top: -20px;
+    background: $siemens-color-4;
+  }
+}

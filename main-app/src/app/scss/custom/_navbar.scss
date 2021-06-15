@@ -1,0 +1,29 @@
+@import "../variables/font";
+
+.nav-bar {
+  background: $siemens-color-41;
+  width: 100%;
+  min-height: 58px;
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding-top: 4px;
+  display: inline-block;
+
+  .icons {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding-right: 20px;
+
+    li {
+      float: left;
+
+      a {
+        border: 0;
+        color: $siemens-color-33;
+        padding: 20px 10px;
+        text-decoration: none;
+      }
+    }
+  }
+}

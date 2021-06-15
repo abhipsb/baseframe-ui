@@ -1,0 +1,64 @@
+@import "../variables/font";
+@import "../variables/colors";
+
+.form {
+  float: left;
+  padding: 0px 15px;
+  width: calc(100% - 30px);
+
+  .form-group {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+
+    .column-label {
+      width: calc(35% - 15px);
+      padding-right: 15px;
+      text-align: right;
+      display: inline-block;
+    }
+
+    .column-input {
+      position: relative;
+      width: 65%;
+      text-align: left;
+      display: inline-block;
+
+      input,
+      textarea {
+        width: 100%;
+        display: inline-block;
+        text-overflow: ellipsis;
+
+        &.disabled-input {
+          background-color: $siemens-color-35;
+          color: $siemens-color-36;
+        }
+      }
+
+      .select-element {
+        width: 100%;
+        margin-top: 0;
+
+        &:after {
+          right: -12px;
+        }
+
+        select,
+        option {
+          width: calc(100% + 20px);
+          outline: none;
+        }
+      }
+    }
+
+    .row-input {
+      @extend .column-input;
+      width: 100%;
+    }
+  }
+}

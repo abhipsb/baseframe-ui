@@ -1,0 +1,113 @@
+@import "../variables/variables";
+
+.application-header {
+  float: left;
+  width: $full-width;
+  height: 158px;
+
+  &.application-error-header {
+    height: 100%;
+  }
+
+  .global-header {
+    background-color: $siemens-color-4;
+    float: left;
+    width: $full-width;
+    height: $global-header-height;
+    border-bottom: $header-border-bottom;
+
+    .siemens-logo {
+      float: left;
+      margin: 18px 40px;
+      height: 26px;
+      width: auto;
+    }
+
+    .application-name {
+      float: right;
+      color: $siemens-color-7;
+      text-transform: uppercase;
+      font-family: $global-header-font;
+      font-size: 34px;
+      margin: 15px 40px;
+      line-height: 1;
+    }
+  }
+
+  .secondary-header {
+    float: left;
+    width: $full-width;
+    background-color: $siemens-color-41;
+    border-bottom: $header-border-bottom;
+    height: $secondary-header-height;
+
+    .system-status-placeholder {
+      float: left;
+    }
+
+    .icons-container {
+      float: right;
+      height: 32px;
+      margin: 10px 40px;
+
+      .about-page-icon {
+        float: right;
+        height: 32px;
+        width: 32px;
+        text-align: center;
+        margin-left: 10px;
+
+        .fa {
+          font-size: 25px;
+          color: $siemens-color-18;
+          cursor: pointer;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+
+  .page-header {
+    @extend .siemens-sans-global-font-2;
+    float: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: calc(100% - 80px);
+    margin-top: 26px;
+    height: $global-header-height;
+
+    .page-header-action-button {
+      a {
+        color: $siemens-color-18;
+      }
+
+      a.active,
+      a:focus {
+        color: $siemens-color-17;
+      }
+    }
+
+    &.error-page-header {
+      height: 100%;
+      margin-top: 0;
+    }
+  }
+
+  .contextual-header {
+    width: 100%;
+    float: left;
+    height: 58px;
+    background-color: $siemens-color-4;
+    border-bottom: 2px solid $siemens-color-32;
+
+    .tabs-container {
+      float: left;
+      height: 100%;
+    }
+
+    .search-container {
+      float: right;
+      height: 100%;
+    }
+  }
+}

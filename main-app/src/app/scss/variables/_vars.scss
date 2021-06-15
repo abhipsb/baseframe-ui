@@ -1,0 +1,20 @@
+@import 'font';
+@import 'colors';
+
+$header-border-bottom: $siemens-color-32 2px solid;
+
+$full-width: 100%;
+
+$global-header-height : 66px;
+$global-header-font: $siemens-sans-global; 
+$secondary-header-height: 54px;
+
+$page-header-font: $siemens-sans-global;
+$page-header-font-size: 32px;
+
+$section-header-font: $siemens-sans-global;
+$section-header-font-size: 28px;
+$section-header-font-weight: bold;
+
+$section-header-paragraph-font: $siemens-sans-global;
+$section-header-paragraph-font-size: 18px;

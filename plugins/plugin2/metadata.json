@@ -1,0 +1,6 @@
+{
+  "Plugin2": {
+    "location": "assets/plugins/plugin2/plugin2.bundle.js",
+    "moduleName": "AppModule"
+  }
+}

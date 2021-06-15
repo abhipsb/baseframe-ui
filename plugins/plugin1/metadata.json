@@ -1,0 +1,6 @@
+{
+  "Plugin1": {
+    "location": "assets/plugins/plugin1/plugin1.bundle.js",
+    "moduleName": "Plugin1Module"
+  }
+}
